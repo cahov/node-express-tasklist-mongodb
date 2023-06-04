@@ -1,4 +1,4 @@
-<table class="table ">
+<table class="table">
   <thead>
     <tr>
       <th>N</th>
@@ -14,19 +14,19 @@
         <td>{{this.title}}</td>
         <td>{{this.description}}</td>
         <td>
-            <div class="btn-group" role="group">
+            <div class="btn-group d-flex flex-wrap gap-1" role="group">
 
           {{#if this.completed}}
-            <button class="btn btn-info rounded"
+            <button class="btn btn-info mx-1 rounded w-50"
               onclick="location.href='/toggle/{{this._id}}'"
             >Terminada</button>
           {{else}}
-            <button class="btn btn-success rounded"
+            <button class="btn btn-success mx-1 rounded w-50"
               onclick="location.href='/toggle/{{this._id}}'"
             >Completar</button>
           {{/if}}
-          <button class="btn btn-warning mx-1 rounded" onclick="location.href='/edit/{{this._id}}'">Editar</button>
-          <button class="btn btn-danger mx-1 rounded"
+          <button class="btn btn-warning mx-1 rounded w-50" onclick="location.href='/edit/{{this._id}}'">Editar</button>
+          <button class="btn btn-danger mx-1 rounded w-50"
             onclick="location.href='/delete/{{this._id}}'"
           >Eliminar</button>
             </div>
