@@ -11,8 +11,16 @@
     {{#each tasks}}
       <tr>
         <td>{{inc @index "+" 1}}</td>
-        <td>{{this.title}}</td>
-        <td>{{this.description}}</td>
+        <td>
+          <div style="max-height: 15em; overflow-y: auto; width: 100%; display: block;">
+              {{this.title}}
+          </div>
+        </td>
+        <td>
+          <div style="max-height: 15em; overflow-y: auto; width: 100%; display: block;">
+              {{this.description}}
+          </div>
+          </td>
         <td>
             <div class="btn-group d-flex flex-wrap gap-1" role="group">
 
