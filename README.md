@@ -14,5 +14,5 @@ El proyecto consiste en una aplicación de lista de tareas donde se puede agrega
 
 
 #### ENVIRONMENT VARIABLES 
-MONGODB_URI
-PORT
+MONGODB_URI  
+PORT  
