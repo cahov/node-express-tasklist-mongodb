@@ -1,0 +1,39 @@
+<div class="card card-body p-4 rounded-0 bg-primary bg-gradient text-black border border-primary ">
+  <h3 class="text-center">Añade una tarea</h3>
+  {{#if error}}
+      <div class="alert alert-danger" role="alert">
+        {{error}}
+      </div>
+    {{/if}}
+  <form action="/tasks/add" method="post" class="text-center">
+    <div>
+      <label for="title">Escribe el título</label>
+      <input
+        type="text"
+        name="title"
+        id="title"
+        placeholder="Título..."
+        required
+        class="form-control rounded-4 bg-white text-blue"
+      />
+    </div>
+    <div>
+      <label for="description">Escribe la descripción</label>
+      <textarea
+        name="description"
+        rows="2"
+        placeholder="Descripción..."
+        required
+        class="form-control rounded-4  bg-white text-blue"
+      ></textarea>
+    </div>
+    <div class="mt-4">
+      <div class="d-inline-block mr-2">
+        <button type="submit" class="btn btn-success btn-lg mx-2">Guardar</button>
+      </div>
+      <div class="d-inline-block">
+        <button type="button" class="btn btn-danger btn-lg" onclick="location.href='/deleteall'">Eliminar todo</button>
+      </div>
+    </div>
+  </form>
+</div>
