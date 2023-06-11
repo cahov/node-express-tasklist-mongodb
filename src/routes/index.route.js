@@ -20,7 +20,7 @@ router.get("/edit/:id", getIdTask);
 router.post("/edit/:id", editTask);
 
 router.get("/delete/:id", deleteTask);
-router.get("/deleteall", deleteAllTasks);
+router.get("/tasks/delete", deleteAllTasks);
 
 router.get("/toggle/:id", toggleCompletedTask);
 

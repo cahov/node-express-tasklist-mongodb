@@ -13,6 +13,7 @@ const renderIndex = async (req, res) => {
 
 const addTask = async (req, res) => {
     try {
+        console.log(req.body)
         const task = Task(req.body);
         await task.save();
         res.redirect("/");
